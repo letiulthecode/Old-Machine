@@ -8,16 +8,13 @@ First you need git to install this package, if you dont have, install at https:/
 Second you need open command prompt, then change directiorctories to your desktop (cd desktop) and type ```git clone https://github.com/letiulthecode/Cyber.11-Source-Code```, git will clone the folder.
 
 # Your adventure starts now!
-
-Now to work you need execute get-dia.bat, or if you want the long way: Cmd> change directiories to the folder > ```lit install SinisterRectus/discordia```
-
 Three executable files are now in your folder, open main.lua
 
 If you dont have an bot go to this site https://discord.com/developers/applications, then click new application > bot > create new bot. Now we need the token, go to token and press copy. (P.S: Dont share the token to anyone, they can control your bot.)
 
-# Making the things run!
-
 In the final line of main.lua will have ```client:run("Bot (your token here)")``` subistitue "(your token here)" to the token we copied
+
+# Making the things run!
 
 Now execute Run.bat or if you want the long way, cmd > change directiories to your folder > luvit main
 
