@@ -9,7 +9,7 @@ Second you need open command prompt, then change directiorctories to your deskto
 
 # Your adventure starts now!
 
-Now to work you need execute get-lit.bat or for the long way: open cmd, go to your folder then type ```PowerShell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager] :: SecurityProtocol = 'Tls12'; iex ((novo objeto net.webclient) .DownloadString ('https://github.com/luvit/lit/raw/ master / get-lit.ps1 ')) "```
+Now to work you need execute get-dia.bat, or if you want the long way: Cmd> change directiories to the folder > ```lit install SinisterRectus/discordia```
 
 Three executable files are now in your folder, open main.lua
 
