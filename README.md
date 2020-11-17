@@ -16,7 +16,7 @@ Now go to OAuth2, scroll down and press bot, scroll down agian and press Adminis
 
 Now the most important thing we need its the package "discordia" to install simply execute get-discordia.bat, or if you want the long way, CMD > Go to your folder > ```lit install SinisterRectus/discordia```
 
-In the final line of main.lua will have ```client:run("Bot (your token here)")``` subistitue "(your token here)" to the token we copied
+In the final line of main.lua will have ```client:run("Bot (your token here)")``` replace "(your token here)" to the token we copied
 
 # Making the things run!
 
