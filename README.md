@@ -1,5 +1,5 @@
 # Cyber.11-Source-Code
-You want learn make an simple bot with an simpel language? Cyber.11's source code its programmed in a tiny language called Lua, perfect for begginers.
+You want learn make an simple bot with an simple language? Cyber.11's source code its programmed in a tiny language called Lua, perfect for begginers.
 
 # Quick Start
 
