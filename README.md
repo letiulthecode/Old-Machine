@@ -12,6 +12,8 @@ Three executable files are now in your folder, open main.lua
 
 If you dont have an bot go to this site https://discord.com/developers/applications, then click new application > bot > create new bot. Now we need the token, go to token and press copy. (P.S: Dont share the token to anyone, they can control your bot.)
 
+Now go to OAuth2, scroll down and press bot, scroll down agian and press Administrator, then copy the link generated and paste into the search bar and do what they says.
+
 Now the most important thing we need its the package "discordia" to install simply execute get-discordia.bat, or if you want the long way, CMD > Go to your folder > ```lit install SinisterRectus/discordia```
 
 In the final line of main.lua will have ```client:run("Bot (your token here)")``` subistitue "(your token here)" to the token we copied
