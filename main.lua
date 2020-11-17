@@ -134,4 +134,4 @@ client:on('messageCreate', function(message)
 
 end)
 
-client:run('Bot Nzc3ODg3ODI2NTYxMzM1MzI3.X7J-fg.m8SchTZFc3_5n8jv2g7tejYbVD8')
+client:run('Bot (put your token here)')
