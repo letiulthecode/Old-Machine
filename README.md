@@ -5,7 +5,7 @@ You want learn make an simple bot with an simple language? Cyber.11's source cod
 
 First you need git to install this package, if you dont have, install at https://git-scm.com/
 
-Second you need open command prompt, then change directiorctories to your desktop (cd desktop) and type ```git clone https://github.com/letiulthecode/Cyber.11-Source-Code```, git will clone the folder.
+Second you need open command prompt, then go to your desktop (cd desktop) and type ```git clone https://github.com/letiulthecode/Cyber.11-Source-Code```, git will clone the folder.
 
 # Your adventure starts now!
 Three executable files are now in your folder, open main.lua
