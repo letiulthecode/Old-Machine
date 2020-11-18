@@ -4,8 +4,11 @@ Why we dont start by now?
 
 # Requeriments
 An 64 bits operating system
-Windows
+
+Windows 7-10
+
 Text editors (Like sublime and notepad++)
+
 Basic knowledge of cmd/batch
 
 # Quick Start
