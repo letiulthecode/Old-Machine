@@ -2,11 +2,17 @@
 You want learn make an simple bot with an simple language? Cyber.11's source code its programmed in a tiny language called Lua, perfect for begginers.
 Why we dont start by now?
 
+# Requeriments
+An 64 bits operating system
+Windows
+Text editors (Like sublime and notepad++)
+Basic knowledge of cmd/batch
+
 # Quick Start
 
 First you need git to install this package, if you dont have, install at https://git-scm.com/
 
-Second you need install Lua, agian if you dont have: https://www.lua.org/manual/5.3/manual.html
+Second you need install Lua to we use the text editor, agian if you dont have: http://github.com/rjpcomputing/luaforwindows/releases
 
 Third you need open command prompt, then go to your desktop (cd desktop) and type ```git clone https://github.com/letiulthecode/Cyber.11-Source-Code```, git will clone the folder.
 
