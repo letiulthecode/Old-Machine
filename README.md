@@ -25,11 +25,9 @@ If you dont have an bot go to this site https://discord.com/developers/applicati
 
 Now go to OAuth2, scroll down and press bot, scroll down agian and press Administrator, then copy the link generated and paste into the search bar and allow the bot to go into your server.
 
-Three executable files are now in your folder, open main.lua
-
 Now the most important thing we need its the package "discordia" to install simply execute get-discordia.bat, or if you want the long way, CMD > Go to your folder > ```lit install SinisterRectus/discordia```
 
-In the final line of main.lua will have ```client:run("Bot (your token here)")``` replace "(your token here)" to the token we copied
+Open main.lua, in the final line will have ```client:run("Bot (put your token here)")``` replace "(put your token here)" to the token we copied
 
 # Making the things run!
 
@@ -37,6 +35,9 @@ Now execute Run.bat or if you want the long way, cmd > change directiories to yo
 
 Now your bot is running! if you want edit the code, before read Discordia Wiki and Discord Dev Portal documentation
 
+# Info
 If you haved an problem contact me on my discord: just an protogen#7094
 
 My bot: https://discord.com/api/oauth2/authorize?client_id=777887826561335327&permissions=8&scope=bot
+
+This bot is more focused on open source.
