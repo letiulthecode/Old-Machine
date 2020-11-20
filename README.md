@@ -23,7 +23,7 @@ Third you need open command prompt, then go to your desktop (cd desktop) and typ
 
 If you dont have an bot go to this site https://discord.com/developers/applications, then click new application > bot > create new bot. Now we need the token, go to token and press copy. (P.S: Dont share the token to anyone, they can control your bot.)
 
-Now go to OAuth2, scroll down and press bot, scroll down agian and press Administrator, then copy the link generated and paste into the search bar and do what they says.
+Now go to OAuth2, scroll down and press bot, scroll down agian and press Administrator, then copy the link generated and paste into the search bar and allow the bot to go into your server.
 
 Three executable files are now in your folder, open main.lua
 
