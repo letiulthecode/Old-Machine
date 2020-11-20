@@ -38,3 +38,5 @@ Now execute Run.bat or if you want the long way, cmd > change directiories to yo
 Now your bot is running! if you want edit the code, before read Discordia Wiki and Discord Dev Portal documentation
 
 If you haved an problem contact me on my discord: just an protogen#7094
+
+My bot: https://discord.com/api/oauth2/authorize?client_id=777887826561335327&permissions=8&scope=bot
