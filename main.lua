@@ -1,107 +1,100 @@
 local discordia = require('discordia')
 local client = discordia.Client()
-local coro = require('coro-http')
 local json = require('json')
 
---commands with double '-' are unused commands.
-
-
+--Please read README.md before you edit this--
+--Open Source Version: 2.0--
 
 local prefix = '>'
 
 client:on('ready', function()
 	print('Logged in as '.. client.user.username)
+	client:setGame(">help || Test Annunciament!")
 end)
 
 client:on('messageCreate', function(message)
     if message.author.bot then return end
-    
-	if message.content == prefix..'messageping' then
+
+	if message.content:lower() == prefix..'mping' then
 		message.channel:send('Pong!')
-		
-	--[[if message.content:sub(1, 4) == '>ban' then
-     local author = message.guild:getMember(message.author.id)
-     local member = message.mentionedUsers.first
-
-     if not member then
-      message:reply("Please mention someone to ban!")
-     return
-      elseif not author:hasPermission("banMembers") then
-      message:reply("You do not have permissions enough to ban someone!")
-      return
     end
-
-    for user in message.mentionedUsers:iter() do
-      member = message.guild:getMember(user.id)
-      if author.highestRole.position > member.highestRole.position then
-        member:ban()
-          end
-       end
-	end]]--
-	
-		
-		
-	elseif message.content == prefix..'reactionping' then
+    
+	if message.content:lower()  == prefix..'rping' then
 	   message:addReaction("🏓")
 	end
-	
-	if message.content == prefix..'qtod' then
-		message.channel:send("Welcome to QTOD! Ask me questions with >qtod!(Question)")
+    
+    if message.content:lower()  == prefix..'dmping' then
+	   message.member:send("Pong!")
 	end
 	
-	if message.content == prefix.."qtod!Your language" then
-	   message.channel:send("<@!"..message.member.id.."> Well i talk english, but my programming language its Lua!")
-	end
-	
-	if message.content == prefix.."qtod!Your born date" then
-	   message.channel:send("<@!"..message.member.id.."> My official born date its 2020/11/16!")
-	end
-	
-	if message.content == prefix.."qtod!Why you are an protogen mask" then
-	   message.channel:send("<@!"..message.member.id.."> Just maybe, im my owner's mask? :eyes:")
-	end
-	
-	if message.content == prefix..'patchnotes' then
-		message.channel:send('Added this command \n reformed help command. \n Added luckynumber and flipcoin \n We are preparing to lauch ban command and github source.')
-	end
-	
-	if message.content == prefix..'sharebot' then
-		message.channel:send('If you want support us, send this link to your friends! https://discord.com/api/oauth2/authorize?client_id=777887826561335327&permissions=8&scope=bot')
-	end
-	
-	if message.content == prefix..'ct.brackets' then
-		message.channel:send('Usage: >cooltest [mention] (if you dont mention anyone then will be yourself.)')
-	end
-	
-	if message.content == prefix..'st.brackets' then
-		message.channel:send('Usage: >stresstest [mention] (if you dont mention anyone then will be yourself.)')
-	end
-	
-	if message.content == prefix..'qtod.brackets' then
-		message.channel:send('Usage: >qtod![Question] (Avable Questions:Your language, Your born date and Why you are an protogen mask)')
-	end
-	
-	if message.content == prefix..'help' then
-       message:reply{ 
+	if message.content:lower()== prefix..'patchnotes' then
+	 message:reply{ 
 	     embed = {
 			 fields = {
-			     {name = "Commands"; value = "Actual prefix = '>' \n \n messageping: Sends 'pong' message (can be used to test discord latency) \n \n reactionping: React 🏓 on your message (can be used as same use to messageping) \n \n cooltest: check cool %! \n \n stresstest: Check stress %! \n \n sharebot: sends an link to you share the bot to your friends! \n \n .brackets: see how use an determined comand \n \n flipcoin: flip an coin! \n \n patchnotes: see news and update of this bot! \n \n luckynumber: get an lucky number! \n \n qtod: Talk something about me and i will respond!\n \n **Problems? talk with my owner: just an protogen#7094**"; inline = false};
+			     {name = "v0.0 Patchnotes"; value = "No updates yet"; inline = false};
 				};
-			 color = discordia.Color.fromRGB(100,100,255).value;
+			 color = discordia.Color.fromRGB(27,26,54).value;
 		    }
 	    }
 	end
 	
-	if message.content == prefix..'flipcoin' then
-	   local tails = 1
-	   local heads = 2
-	   local flip = math.random(tails, heads)
+	if message.content:lower() == prefix..'sharebot' then
+		message.channel:send('If you want support us, send this link to your friends! https://discord.com/api/oauth2/authorize?client_id=777887826561335327&permissions=8&scope=bot')
+	end
+	
+	if message.content:lower() == prefix..'ct.brackets' then
+		message.channel:send('Usage: >cooltest [mention] (if you dont mention anyone then will be yourself.)')
+	end
+	
+	if message.content:lower() == prefix..'st.brackets' then
+		message.channel:send('Usage: >stresstest [mention] (if you dont mention anyone then will be yourself.)')
+	end
+	
+	if message.content:lower() == prefix..'githubsrc' then
+		message.channel:send('Here, if you want make your own bot! (please read README.md) https://github.com/letiulthecode/Cyber.11-Source-Code')
+	end
+	
+	if message.content:lower() == prefix..'rp.brackets' then
+		message.channel:send("Usage: >report (automatticaly will send an request to owner's output, then he will add you and start the problem solving)")
+	end
+	
+    if message.content:lower() == prefix..'report' then
+		message.channel:send('Report sended!')
+		print(message.author.tag.." Sended Report")
+	end
+	
+	if message.content:lower() == prefix..'help' then
+	   message:reply("<@!"..message.member.id.."> Check your DMs!")
+       message.member:send{ 
+	     embed = {
+			 fields = {
+			     {name = "Commands"; value = "Actual prefix = '>' \n \n mping: Sends 'pong' message (can be used to test discord latency) \n \n rping: React 🏓 on your message (can be used as same use to messageping) \n \n cooltest: Check cool %! \n \n stresstest: Check stress %! \n \n sharebot: Sends an link to you share the bot to your friends! \n \n .brackets: See how use an determined comand \n \n flipcoin: Flip an coin! \n \n patchnotes: See news and update of this bot! \n \n luckynumber: Get an lucky number! \n \n githubsrc: Show an link to git hub with my source code! \n \n report: If you haved an error or something wierd with the bot, you can report here \n \n dmping: Send 'Pong!' on your dm\n \n**Thanks for reading!**"; inline = false};
+				};
+			 color = discordia.Color.fromRGB(27,26,54).value;
+		    }
+	    }
+	end
+	
+    if message.content:lower():sub(1, #'>8ball') == prefix..'8ball' then
+	   local random = math.random(1,3)
+       
+       if random == 1 then
+          message.channel:send(":8ball: Maybe :8ball:")
+       elseif random == 2 then
+       	  message.channel:send(":8ball: Yes :8ball:")
+       elseif random == 3 then 
+       	  message.channel:send(":8ball: No :8ball:")
+       end
+	end
+    
+	if message.content:lower() == prefix..'flipcoin' then
+	   local flip = math.random(1, 4)
 	   
-	   if flip == tails then
-	      message.channel:send("Flipped tails!")
-	   else
-	      message.channel:send("Flipped heads!")
-	   end
+	   if flip >= 2 then
+	       message.channel:send("Heads!")
+		elseif flip <= 2 then
+		   message.channel:send("Tails!")
+		end
 	end
 	
 	if message.content:lower():sub(1, #'>cooltest') == prefix..'cooltest' then
@@ -125,13 +118,11 @@ client:on('messageCreate', function(message)
     if message.content:lower():sub(1, #'>luckynumber') == prefix..'luckynumber' then
 	   local mentioned = message.mentionedUsers
 	   if #mentioned == 1 then
-	      message:reply("<@!"..mentioned[1][1]..">'s lucky number is: "..math.random(1, 10).." :four_leaf_clover:")
+	      message:reply("<@!"..mentioned[1][1]..">'s lucky number is: "..math.random(1, 9).." :four_leaf_clover:")
 		elseif #mentioned == 0 then
-	      message:reply("<@!"..message.member.id..">'s lucky number is: "..math.random(1, 10).." :four_leaf_clover:")
+	      message:reply("<@!"..message.member.id..">'s lucky number is: "..math.random(1, 9).." :four_leaf_clover:")
 	   end
 	end
-	
-
 end)
 
 client:run('Bot (put your token here)')
