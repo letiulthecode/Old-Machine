@@ -9,7 +9,7 @@ local prefix = '>'
 
 client:on('ready', function()
 	print('Logged in as '.. client.user.username)
-	client:setGame(">help || Test Annunciament!")
+	client:setGame(">help || Test Annunciament!") --change the annunciament here
 end)
 
 client:on('messageCreate', function(message)
@@ -39,7 +39,7 @@ client:on('messageCreate', function(message)
 	end
 	
 	if message.content:lower() == prefix..'sharebot' then
-		message.channel:send('If you want support us, send this link to your friends! https://discord.com/api/oauth2/authorize?client_id=777887826561335327&permissions=8&scope=bot')
+		message.channel:send('https://discord.com/api/oauth2/authorize?client_id=777887826561335327&permissions=8&scope=bot')
 	end
 	
 	if message.content:lower() == prefix..'ct.brackets' then
@@ -68,7 +68,7 @@ client:on('messageCreate', function(message)
        message.member:send{ 
 	     embed = {
 			 fields = {
-			     {name = "Commands"; value = "Actual prefix = '>' \n \n mping: Sends 'pong' message (can be used to test discord latency) \n \n rping: React 🏓 on your message (can be used as same use to messageping) \n \n cooltest: Check cool %! \n \n stresstest: Check stress %! \n \n sharebot: Sends an link to you share the bot to your friends! \n \n .brackets: See how use an determined comand \n \n flipcoin: Flip an coin! \n \n patchnotes: See news and update of this bot! \n \n luckynumber: Get an lucky number! \n \n githubsrc: Show an link to git hub with my source code! \n \n report: If you haved an error or something wierd with the bot, you can report here \n \n dmping: Send 'Pong!' on your dm\n \n**Thanks for reading!**"; inline = false};
+			     {name = "Commands"; value = "Actual prefix = '>' \n \n mping: Sends 'pong' message (can be used to test discord latency) \n \n rping: React 🏓 on your message (can be used as same use to messageping) \n \n cooltest: Check cool %! \n \n stresstest: Check stress %! \n \n sharebot: Sends an link to you share the original bot to your friends! \n \n .brackets: See how use an determined comand \n \n flipcoin: Flip an coin! \n \n patchnotes: See news and update of this bot! \n \n luckynumber: Get an lucky number! \n \n githubsrc: Show an link to git hub with my source code! \n \n report: If you haved an error or something wierd with the bot, you can report here \n \n dmping: Send 'Pong!' on your dm\n \n**Thanks for reading!**"; inline = false};
 				};
 			 color = discordia.Color.fromRGB(27,26,54).value;
 		    }
