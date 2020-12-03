@@ -2,7 +2,7 @@
 You want learn make an simple bot with an simple language? Cyber.11's source code its programmed in a tiny language called Lua, perfect for begginers.
 Why we dont start by now?
 
-# Requeriments
+# Requirements
 An 64 bits operating system
 
 Windows 7-10
