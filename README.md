@@ -3,15 +3,25 @@ Old-Machine is a mega simple bot in just one file, without any external librarie
 
 Commands:
 
-> ping - Respond with a funny gif!
+>whois - See information of a user!
 
-> ban - Ban some out-laws, sherrif! (Requires banMember permission)
+>ping - Respond with a funny gif!
 
-> coolness - See coolness of a person!
+>ban - Ban some out-laws, sherrif! (Requires banMember permission)
 
-> purge - Start a purge to clean the chat! (Requies manageMessages permission)
+>coolness - See coolness of a person!
 
-> unban - Warn out-laws! (Requires banMember permission)
+>battle - Fight someone!
+
+>magicball - Speak with a magic ball!
+
+>time - Reveals the current UNIX time!
+
+>unwarn - WIP | UnWarn wrong people you warned! (Requires administrator permission)
+
+>purge - Start a purge to clean the chat! (Requies manageMessages permission)
+
+>warn - WIP | Warn people before doing a mess! (Requires administrator permission)
 
 # Dependencies
 
@@ -26,7 +36,7 @@ Luvit
 Old machine can be installed from:
 
 git - ``git clone https://letiulthecode/Old-Machine``
-lit - ``lit install letiulthecode/Old-Machine``
+
 
 # Contribuing
 
