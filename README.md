@@ -5,6 +5,8 @@ Commands:
 
 >whois - See information of a user!
 
+>quote - Quote a message
+
 >ping - Respond with a funny gif!
 
 >ban - Ban some out-laws, sherrif! (Requires banMember permission)
@@ -25,8 +27,6 @@ Commands:
 
 # Dependencies
 
-Lua 5.3 or Higher
-
 Discordia 2.8.4
 
 Luvit
@@ -37,6 +37,7 @@ Old machine can be installed from:
 
 git - ``git clone https://letiulthecode/Old-Machine``
 
+lit - ``lit install letiulthecode/Old-Machine``--NOTE: The Old-Machine.lua will stay at deps folder by default, change it to your project folder
 
 # Contribuing
 
