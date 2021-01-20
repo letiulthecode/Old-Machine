@@ -206,6 +206,7 @@ local commands = { -- Define commands its a table that will contain our commands
                 'Giving him a head-shot with a sniper',
                 'Making him rage-quit',
                 'Abusing of bugs',
+                'Find and kill him in a manhunt',
                 'Using Uno Reverse card',
                 'Killing him in front of a crewmate'
               }
@@ -232,6 +233,8 @@ local commands = { -- Define commands its a table that will contain our commands
           'I dont know',
           'Im dont gonna answer this.',
           'I will think.',
+          'Probably yes.',
+          'Probably no.'
         }
         message:reply {
           embed = {
@@ -243,6 +246,32 @@ local commands = { -- Define commands its a table that will contain our commands
             color = discordia.Color.fromRGB(27,26,54).value
           }
         }
+    end
+  };
+  [prefix.."quote"] = {
+    desc = "Quote a message (Needs Message ID)",
+    exec = function (message)
+        local MsgID = message.content:gsub(prefix.."quote ", "")
+        local Msg = message.channel:getMessage(MsgID)
+        local Channel = message.guild:getChannel(message.channel.id)
+        if not Msg then
+            message:reply("Couldn't find the quote you looking for.")
+        else
+            message:reply{
+              embed = {
+                author = {
+                  name = Msg.author.username,
+                  icon_url = Msg.author.avatarURL
+                },
+                description = Msg.content,
+                footer = {
+                  text = string.format("#%s in %s", Channel.name, message.guild.name)
+                },
+                timestamp = Msg.timestamp,
+                color = discordia.Color.fromRGB(27,26,54).value
+              }
+            }
+        end
     end
   }
 }
